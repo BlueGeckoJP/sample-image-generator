@@ -1,3 +1,7 @@
+use crate::pattern::{Pattern, checker};
+
+mod pattern;
+
 fn main() {
-    println!("Hello, world!");
+    println!("{:?}", checker::CheckerPattern {}.generate(4, 4));
 }
