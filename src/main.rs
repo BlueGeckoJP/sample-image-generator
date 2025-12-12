@@ -21,7 +21,7 @@ fn main() {
     let patterns: Vec<Box<dyn Pattern>> = vec![Box::new(checker::CheckerPattern {})];
 
     for pattern in patterns {
-        let (width, height) = (512, 512);
+        let (width, height) = (2048, 2048);
         let data = pattern.generate(width, height);
         let mut image_buffer = ImageBuffer::new(width, height);
 
